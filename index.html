@@ -13,70 +13,73 @@
     <div class="container">
       <div class="jumbotron">
         <center><h1>Epicodus Pizzeria</h1>
-          <h4>Order online in seconds!</h4>
+          <h4>Order online!</h4>
         </center>
       </div>
 
       <div class="row">
         <form id="order-form" class="form-group">
           <div class="col-md-4">
-            <h3>Place your order below!</h3>
-            <ol>
-              <li>Choose your size!</li>
-              <li>Choose your sauce!</li>
-              <li>Choose your toppings!</li>
-              <li>Place your order!</li>
-            </ol>
 
-            <br>
-
-            <h4><strong>Select a size:</strong></h4>
-            <select class="" name="">
-              <option value="">Select a size...</option>
-              <option value="">Small (10")</option>
-              <option value="">Medium (14")</option>
-              <option value="">Large (18")</option>
-              <option value="">Extra-Large (22")</option>
-            </select> Add details here
-
-            <br>
-
-            <h4><strong>Select your sauce:</strong></h4>
-            <select class="" name="">
-              <option value="">Select a sauce...</option>
-              <option value="">Traditional Marinara</option>
-              <option value="">Creamy Garlic Parmesan</option>
-              <option value="">Barbeque</option>
-              <option value="">Pesto</option>
-            </select> Add details here
-
-            <br>
-            <div id="new-topping">
-              <h4><strong>Select a topping:</strong></h4>
+            <div id="new-pizza" class="">
+              <h3>Your Order:</h3>
+              <h4><strong>Select a size:</strong></h4>
               <select class="" name="">
-                <option value="">Select a topping...</option>
-                <option value="">Pepperoni</option>
-                <option value="">Sausage</option>
-                <option value="">Chicken</option>
-                <option value="">Bell Pepper</option>
-                <option value="">Caramalized Onion</option>
-                <option value="">Mushroom</option>
-                <option value="">Olive</option>
-                <option value="">Arugula</option>
-                <option value="">Spinnach</option>
-                <option value="">Tomato</option>
-              </select> <button id="add-topping" class="btn btn-sm btn-danger" type="button" name="button-add-topping">Add Topping</button>
+                <option value="">Select a size...</option>
+                <option value="">Small (10")</option>
+                <option value="">Medium (14")</option>
+                <option value="">Large (18")</option>
+                <option value="">Extra-Large (22")</option>
+              </select> Add details here
+
+              <br>
+              <br>
+
+              <h4><strong>Select your sauce:</strong></h4>
+              <select class="" name="">
+                <option value="">Select a sauce...</option>
+                <option value="">Traditional Marinara</option>
+                <option value="">Creamy Garlic Parmesan</option>
+                <option value="">Barbeque</option>
+                <option value="">Pesto</option>
+              </select> Add details here
+
+              <br>
+              <br>
+
+              <div class="">
+                <h4><strong>Select your toppings:</strong></h4>
+                <!-- <select class="" name="">
+                  <option value="">Select a topping...</option>
+                  <option value="">Pepperoni</option>
+                  <option value="">Sausage</option>
+                  <option value="">Chicken</option>
+                  <option value="">Bell Pepper</option>
+                  <option value="">Caramalized Onion</option>
+                  <option value="">Mushroom</option>
+                  <option value="">Olive</option>
+                  <option value="">Arugula</option>
+                  <option value="">Spinnach</option>
+                  <option value="">Tomato</option>
+                </select><button id="add-topping" class="btn btn-sm btn-danger" type="button" name="button-add-topping">Add Topping</button>
+  -->
+                <input type="checkbox" name="toppings" value="pepperoni"> Pepperoni<br>
+                <input type="checkbox" name="toppings" value="sausage"> Italian Sausage<br>
+                <input type="checkbox" name="toppings" value="chicken"> Chicken<br>
+                <input type="checkbox" name="toppings" value="peppers"> Bell Peppers<br>
+                <input type="checkbox" name="toppings" value="onion"> Caramalized Onions<br>
+                <input type="checkbox" name="toppings" value="mushroom"> Mushrooms<br>
+                <input type="checkbox" name="toppings" value="olive"> Olives<br>
+                <input type="checkbox" name="toppings" value="tomato"> Tomato<br>
+                <input type="checkbox" name="toppings" value="spinnach"> Spinnach<br>
+              </div>
             </div>
-
             <br>
             <br>
-
-            <button class="btn btn-lg btn-primary" type="submit" name="button-order">Add a Pizza</button>
-
+            <button id="add-pizza" class="btn btn-lg btn-primary" type="submit" name="button-add-pizza">Add a Pizza</button>
             <br>
             <br>
-
-            <button class="btn btn-lg btn-success" type="submit" name="button-order">Order Now!</button>
+            <button class="btn btn-lg btn-danger" type="submit" name="button-order">Finished!</button>
           </div> <!-- END COLUMN 1 -->
         </form>
 
