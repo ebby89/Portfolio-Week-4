@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href="css/bootstrap.css" type="text/css" rel="stylesheet">
+    <link href="css/styles.css" type="text/css" rel="stylesheet">
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title></title>
+    <!-- INSERT TITLE -->
+  </head>
+  <body class="margin">
+    <div class="container">
+      <div class="jumbotron">
+        <center><h1>Epicodus Pizzeria</h1>
+          <h4>Order online in seconds!</h4>
+        </center>
+      </div>
+
+      <div class="row">
+        <form class="form-group">
+          <div class="col-md-4">
+            <h3>Place your order below!</h3>
+            <ol>
+              <li>Choose your size!</li>
+              <li>Choose your sauce!</li>
+              <li>Choose your toppings!</li>
+              <li>Place your order!</li>
+            </ol>
+
+            <br>
+
+            <h4><strong>Select a size:</strong></h4>
+            <select class="" name="">
+              <option value="">Select a size...</option>
+              <option value="">Small (10")</option>
+              <option value="">Medium (14")</option>
+              <option value="">Large (18")</option>
+              <option value="">Extra-Large (22")</option>
+            </select> Add details here
+
+            <br>
+
+            <h4><strong>Select your sauce:</strong></h4>
+            <select class="" name="">
+              <option value="">Select a sauce...</option>
+              <option value="">Pepperoni</option>
+              <option value="">Medium (14")</option>
+              <option value="">Large (18")</option>
+              <option value="">Extra-Large (22")</option>
+            </select> Add details here
+
+            <br>
+
+            <h4><strong>Select a topping:</strong></h4>
+            <select class="" name="">
+              <option value="">Select a topping...</option>
+              <option value="">Pepperoni</option>
+              <option value="">Sausage</option>
+              <option value="">Bell Pepper</option>
+              <option value="">Onion</option>
+              <option value="">Select a topping...</option>
+              <option value="">Pepperoni</option>
+              <option value="">Sausage</option>
+              <option value="">Bell Pepper</option>
+              <option value="">Onion</option>
+            </select> <button class="btn btn-sm btn-danger" type="button" name="button-add-topping">Add Topping</button>
+
+            <br>
+            <br>
+
+            <button class="btn btn-lg btn-primary" type="submit" name="button-order">Add a Pizza</button>
+
+            <br>
+            <br>
+
+            <button class="btn btn-lg btn-success" type="submit" name="button-order">Order Now!</button>
+          </div> <!-- END COLUMN 1 -->
+        </form>
+
+      </div>
+
+      <div id="display-confirmation"> <!--DELIVERY OUTPUT -->
+        <h3>Please choose your method of delivery:</h3>
+        <div class="">
+          <label for="">Delivery</label>
+          <input type="radio" name="delivery" value="0">
+        </div>
+        <div class="">
+          <label for="">Pick-up</label>
+          <input type="radio" name="delivery" value="1">
+        </div>
+      </div>
+
+      <div> <!-- ADDRESS & CONTACT INPUT -->
+        <h4>Please enter the address for delivery:</h4>
+        <label for="">Address:</label>
+        <input type="text" name="" value="">
+
+        <h4>Please enter your preferred phone number to be reached at:</h4>
+        <label for="">Phone Number</label>
+        <input type="text" name="" value="">
+
+        <h4>Opt-in for text notifications regarding your delivery status?</h4>
+        <div class="">
+          <label for="">Yes, notify me via text with updates!</label>
+          <input type="radio" name="text-notify" value="0">
+        </div>
+        <div class="">
+          <label for="">No, I do not wish to receive text updates.</label>
+          <input type="radio" name="text-notify" value="1">
+        </div>
+
+
+      </div>
+
+    </div> <!-- END CONTAINER -->
+  </body>
+</html>
+
+
+<!-- LIVE SERVER -->
+<!-- STEP ONE: Clone from https://github.com/tapio/live-server -->
+<!-- STEP TWO: Install: Type "npm install -g live-server" -->
+<!-- STEP THREE: Initiate live-server: Type "live-server" in terminal after enabling-->
