@@ -1,14 +1,33 @@
 //BACK END
-function Pizza(size, sauce, toppings) {
+function Pizza(size) {
   this.size = size;
-  this.sauce = sauce;
   this.toppings = [];
+  this.price = 0;
 }
 
-function Topping() {
+Pizza.prototype.totalPrice = function() {
+  var price = 0;
 
-}
+  if (this.size === "S") {
+    price += 10;
+  } else if (this.size === "M") {
+    price += 12;
+  } else if (this.size === "L") {
+    price += 14;
+  } else if (this.size === "XL") {
+    price += 16;
+  }
 
+  if (this.toppings.length === 0) {
+    price *= 1;
+    this.toppings.push("Plain Cheese")
+  } else {
+    price += (this.toppings.length * 1);
+  }
+
+  var total = price.toFixed(2);
+  return total;
+};
 
 
 //FRONT END
@@ -57,5 +76,17 @@ $(document).ready(function(){
   $("#order-form").submit(function(event){
     event.preventDefault();
 
+    var pizzaSizeInput = $("#pizza-size").val();
+    var newPizza = new Pizza(pizzaSizeInput);
+
+    $("input[name='toppings']:checked").each(function(){
+      newPizza.toppings.push($(this).val());
+    });
+
+    var displayPrice = newPizza.totalPrice();
+
+    $("#display-size").text(pizzeSizeInput);
+    $("#display-toppings").text(newPizza.toppings);
+    $("#display-cost").text(displayPrice);
   });
 });
