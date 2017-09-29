@@ -35,7 +35,7 @@
               <br>
               <br>
 
-              <h4><strong>Select your sauce:</strong></h4>
+              <!-- <h4><strong>Select your sauce:</strong></h4>
               <select id="pizza-sauce" class="" name="">
                 <option disabled selected>- Select One -</option>
                 <option value="A">Traditional</option>
@@ -45,10 +45,10 @@
               </select>
 
               <br>
-              <br>
+              <br> -->
 
               <div class="">
-                <h4><strong>Select your toppings:</strong></h4>
+                <h4><strong>Select your toppings: ($0.55 each)</strong></h4>
                 <input type="checkbox" name="toppings" value="pepperoni"> Pepperoni<br>
                 <input type="checkbox" name="toppings" value="sausage"> Italian Sausage<br>
                 <input type="checkbox" name="toppings" value="chicken"> Chicken<br>
@@ -61,14 +61,14 @@
               </div>
             </div>
             <br>
-            <button id="add-pizza" class="btn btn-lg btn-primary" type="submit" name="button-add-pizza">Add a Pizza</button>
+            <button id="add-pizza" class="btn btn-lg btn-primary" type="button" name="button-add-pizza">Add a Pizza</button>
             <br>
             <br>
-            <button class="btn btn-lg btn-danger" type="submit" name="button-order">Finished!</button>
+            <button id class="btn btn-lg btn-danger" type="submit" name="button-order">Finished!</button>
           </div> <!-- END COLUMN 1 -->
         </form>
 
-        <div id="display-order-summary" class="hid">
+        <div id="display-order-summary" class="">
           <h1>Your Order Summary:</h1>
           <h3>Pizza Size: <span id="display-size"></span></h3>
           <h3>Toppings: <span id="display-toppings"></span></h3>
@@ -78,7 +78,7 @@
 
 
 
-        <div id="display-confirmation" class="col-md-8">
+        <!-- <div id="display-confirmation" class="col-md-8">
           <div class="">
             <h3>Delivery or Pick-up?</h3>
             <div class="">
@@ -88,12 +88,12 @@
               <label for="">Pick-up</label>
             </div>
           </div>
-          <br>
+          <br> -->
 
 
   <!--DELIVERY OUTPUT -->
   <!-- ADDRESS & CONTACT INPUT -->
-          <div class="container">
+          <!-- <div class="container">
             <h5>Please provide the following information:</h5>
             <label for="">Name:</label>
             <input type="text" name="" value="" placeholder="First, Last">

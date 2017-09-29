@@ -1,3 +1,7 @@
 body {
   margin-bottom: 75px;
 }
+
+#display-order-summary {
+  text-align: right;
+}
