@@ -41,17 +41,7 @@ $(document).ready(function(){
                                '<option value="">Medium (14")</option>' +
                                '<option value="">Large (18")</option>' +
                                '<option value="">Extra-Large (22")</option>' +
-                             '</select> Add details here' +
-                             '<br>' +
-                             '<br>' +
-                             '<h4><strong>Select your sauce:</strong></h4>' +
-                             '<select class="" name="">' +
-                               '<option value="">Select a sauce...</option>' +
-                               '<option value="">Traditional Marinara</option>' +
-                               '<option value="">Creamy Garlic Parmesan</option>' +
-                               '<option value="">Barbeque</option>' +
-                               '<option value="">Pesto</option>' +
-                             '</select> Add details here' +
+                             '</select>' +
                              '<br>' +
                              '<br>' +
                              '<div class="">' +
@@ -84,5 +74,7 @@ $(document).ready(function(){
     $("#display-size").text(pizzaSizeInput);
     $("#display-toppings").text(newPizza.toppings);
     $("#display-cost").text(displayPrice);
+
+    $("#display-order-summary").fadeIn(600);
   });
 });
