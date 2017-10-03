@@ -10,14 +10,13 @@ _Collects input data from user (quantity, size, toppings) and displays receipt c
 
 ## Specs
 
-1) User can select a size
-2) User can select a sauce
-3) User can select a topping
-4) User can add additional toppings on "Add Topping"
-5) User can add additional pizzas on "Add Pizza"
-6) It will collect user input and calculate a cost on "Place Order"
-7) It will display summary of user input including calculated cost
-8) It will ask for a delivery address and phone number if delivery is chosen
+| Behavior Description                                    | Input                           | Output                                                                         |
+|---------------------------------------------------------|---------------------------------|--------------------------------------------------------------------------------|
+| User can select a pizza size.                           | Medium                          | 'Size: Medium'                                                                 |
+| User can select multiple toppings by checking boxes.    | Pepperoni, Spinnach             | 'Toppings: Pepperoni,Spinnach'                                                 |
+| Creates an alert pop-up if user does not select a size. | Size: (empty)                   | 'Please enter a size.'                                                         |
+| Calculates and displays the total cost of the pizza.    | Medium + 3 toppings             | 'Total Cost: 13.10'                                                            |
+| Displays summary of order.                              | Size: Small Toppings: Pepperoni | 'Your Order Summary: Pizza Size: Medium, Toppings: Pepperoni, Total Cost: 13.10' |
 
 
 <!-- INSERT SPEC TABLE -->
@@ -31,6 +30,16 @@ _Collects input data from user (quantity, size, toppings) and displays receipt c
 * _ENJOY!_
 
 ## Known Bugs
+
+Your Order Summary:
+Pizza Size:
+Medium
+
+Toppings:
+Pepperoni,Italian-Sausage
+
+Total Cost:
+13.10
 
 _N/A_
 
