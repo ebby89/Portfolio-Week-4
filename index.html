@@ -11,15 +11,13 @@
   <body class="margin">
     <div class="container">
       <div class="jumbotron">
-        <center><h1>Programmer's Pizzeria</h1>
-          <h4>We won't try to make you socialize.</h4>
-        </center>
+        <center><h1>Programmer's Pizzeria</h1></center>
       </div>
 
       <div class="row">
         <form id="order-form" class="form-group">
           <div class="box col-lg-4">
-            <div id="new-pizza" class="">
+            <div id="new-pizza">
               <h2><strong>Your Order:</strong></h2>
               <h4><strong>Select a size:</strong></h4>
               <select id="pizza-size" class="" name="">
@@ -33,21 +31,19 @@
               <br>
               <br>
 
-              <div class="">
-                <h4><strong>Select your toppings: ($0.55 each)</strong></h4>
-                <input type="checkbox" name="toppings" value="Pepperoni"> Pepperoni<br>
-                <input type="checkbox" name="toppings" value="Italian-Sausage"> Italian Sausage<br>
-                <input type="checkbox" name="toppings" value="Chicken"> Chicken<br>
-                <input type="checkbox" name="toppings" value="Bell-Peppers"> Bell Peppers<br>
-                <input type="checkbox" name="toppings" value="Caramalized-Onions"> Caramalized Onions<br>
-                <input type="checkbox" name="toppings" value="Mushrooms"> Mushrooms<br>
-                <input type="checkbox" name="toppings" value="Olives"> Olives<br>
-                <input type="checkbox" name="toppings" value="Tomato"> Tomato<br>
-                <input type="checkbox" name="toppings" value="Spinnach"> Spinnach<br>
-              </div>
+              <h4><strong>Select your toppings: ($0.55 each)</strong></h4>
+              <input type="checkbox" name="toppings" value="Pepperoni"> Pepperoni<br>
+              <input type="checkbox" name="toppings" value="Italian-Sausage"> Italian Sausage<br>
+              <input type="checkbox" name="toppings" value="Chicken"> Chicken<br>
+              <input type="checkbox" name="toppings" value="Bell-Peppers"> Bell Peppers<br>
+              <input type="checkbox" name="toppings" value="Caramalized-Onions"> Caramalized Onions<br>
+              <input type="checkbox" name="toppings" value="Mushrooms"> Mushrooms<br>
+              <input type="checkbox" name="toppings" value="Olives"> Olives<br>
+              <input type="checkbox" name="toppings" value="Tomato"> Tomato<br>
+              <input type="checkbox" name="toppings" value="Spinnach"> Spinnach<br>
             </div>
             <br>
-            <button id class="btn btn-lg btn-danger" type="submit" name="button-order">Place Order</button>
+            <button id class="btn btn-lg btn-danger red-btn" type="submit" name="button-order">Place Order</button>
           </div> <!-- END COLUMN 1 -->
         </form>
 
@@ -58,10 +54,15 @@
             <h3 class="color-dif">Toppings: </h3>
             <h4><span id="display-toppings"></span></h4>
             <h3 class="color-dif">Total Cost: </h3>
-            <h1><span id="display-cost"></span></h1>
+            <h1>$<span id="display-cost"></span></h1>
             <br>
-            <button class="btn btn-lg btn-danger margin-right" type="button" name="button-back">Back to Order</button><button class="btn btn-lg btn-warning" type="button" name="button-reset">Restart Order</button>
+            <button class="btn btn-lg margin-right red-btn" type="button" name="button-back">Back to Order</button><button class="btn btn-lg yellow-btn margin-right" type="button" name="button-reset">Restart Order</button><button class="btn btn-lg green-btn" type="button" name="button-finished">Submit Order</button>
+            <div id="display-pickup">
+              <button class="btn btn-md red-btn" type="button" name="button-home">Home</button>
+              <h3>Your order will be ready for pick-up in approximately 30 minutes.</h3>
+            </div>
           </div>
+
 
 
 

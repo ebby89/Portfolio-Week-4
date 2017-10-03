@@ -47,6 +47,10 @@ $(document).ready(function(){
       newPizza.toppings.push($(this).val());
     });
 
+    $("input[value='Pepperoni']:checked").val(function(){
+      $("")
+    });
+
     var displayPrice = newPizza.totalPrice();
     $("#display-size").text(pizzaSizeInput);
     $("#display-toppings").text(newPizza.toppings);
@@ -54,6 +58,7 @@ $(document).ready(function(){
 
     $("#display-order-summary").fadeIn(600);
     $("#order-form").hide();
+    $(".btn-md").hide();
     $("button[name='button-back']").click(function(){
       $("#display-order-summary").hide();
       $("#order-form").fadeIn(600);
@@ -62,6 +67,19 @@ $(document).ready(function(){
     $("button[name='button-reset']").click(function(){
       $("#display-order-summary").hide();
       $("#order-form").fadeIn(600);
+      resetForm();
+    });
+
+    $("button[name='button-finished']").click(function(){
+      $(".btn-lg").hide();
+      $(".btn-md").show();
+      $("#display-pickup").fadeIn();
+    });
+
+    $("button[name='button-home']").click(function(){
+      $("#display-order-summary").hide();
+      $("#order-form").fadeIn(600);
+      $(".btn-lg").show();
       resetForm();
     });
   });

@@ -1,9 +1,14 @@
 body {
   margin-bottom: 75px;
+  background-color: black;
 }
 
-ul, li {
+ul {
   list-style: none;
+}
+
+h1 {
+  text-shadow: -1px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
 }
 
 .color-dif {
@@ -11,14 +16,14 @@ ul, li {
 }
 
 #display-order-summary {
-
   display: none;
 }
 
 .box {
+  background-color: white;
+  border-color: red;
+  border-width: thick;
   border-style: solid;
-  border-width: 4px;
-  border-color: black;
   border-radius: 20px;
   padding: 20px;
   margin: 20px;
@@ -26,4 +31,56 @@ ul, li {
 
 .margin-right {
   margin-right: 15px;
+}
+
+.jumbotron {
+  border-color: red;
+  border-width: thick;
+  border-style: solid;
+  background-image: url(../img/banner1.jpg);
+  background-size: cover;
+  background-
+  overflow: hidden;
+  color: red;
+}
+
+.red-btn {
+  background-color: red;
+  border-color: black;
+  border-width: medium;
+  color: black;
+  font-weight: bold;
+}
+
+.yellow-btn {
+  background-color: yellow;
+  border-color: black;
+  border-width: medium;
+  color: black;
+  font-weight: bold;
+}
+
+.green-btn {
+  background-color: green;
+  border-color: black;
+  border-width: medium;
+  color: black;
+  font-weight: bold;
+}
+
+.red-btn:hover, .yellow-btn:hover, .green-btn:hover {
+  background-color: black;
+  border-color: blue;
+  color: white;
+}
+
+ CHECKBOXES{
+  border-style: dotted;
+  border-width: medium;
+  border-color: black;
+  background: black;
+}
+
+#display-pickup {
+  display: none;
 }
