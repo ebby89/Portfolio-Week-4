@@ -50,11 +50,19 @@ $(document).ready(function(){
     var displayPrice = newPizza.totalPrice();
     $("#display-size").text(pizzaSizeInput);
     $("#display-toppings").text(newPizza.toppings);
-
     $("#display-cost").text(displayPrice);
 
     $("#display-order-summary").fadeIn(600);
+    $("#order-form").hide();
+    $("button[name='button-back']").click(function(){
+      $("#display-order-summary").hide();
+      $("#order-form").fadeIn(600);
+    });
 
-    resetForm();
+    $("button[name='button-reset']").click(function(){
+      $("#display-order-summary").hide();
+      $("#order-form").fadeIn(600);
+      resetForm();
+    });
   });
 });

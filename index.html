@@ -18,10 +18,9 @@
 
       <div class="row">
         <form id="order-form" class="form-group">
-          <div class="col-md-4">
-
+          <div class="box col-lg-4">
             <div id="new-pizza" class="">
-              <h3>Your Order:</h3>
+              <h2><strong>Your Order:</strong></h2>
               <h4><strong>Select a size:</strong></h4>
               <select id="pizza-size" class="" name="">
                 <option disabled selected>- Select One -</option>
@@ -51,8 +50,8 @@
             <button id class="btn btn-lg btn-danger" type="submit" name="button-order">Place Order</button>
           </div> <!-- END COLUMN 1 -->
         </form>
-        <div class="col-md-8">
-          <div class="receipt-box" id="display-order-summary">
+
+          <div class="box col-lg-8" id="display-order-summary">
             <h1>Your Order Summary:</h1>
             <h3 class="color-dif">Pizza Size: </h3>
             <h4><span id="display-size"></span></h4>
@@ -60,8 +59,10 @@
             <h4><span id="display-toppings"></span></h4>
             <h3 class="color-dif">Total Cost: </h3>
             <h1><span id="display-cost"></span></h1>
+            <br>
+            <button class="btn btn-lg btn-danger margin-right" type="button" name="button-back">Back to Order</button><button class="btn btn-lg btn-warning" type="button" name="button-reset">Restart Order</button>
           </div>
-        </div>
+
 
 
         <!-- <div id="display-confirmation" class="col-md-8">
